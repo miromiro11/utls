@@ -1,4 +1,4 @@
-module github.com/saucesteals/utls
+module github.com/miromiro11/utls
 
 go 1.16
 
