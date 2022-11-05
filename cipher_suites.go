@@ -14,8 +14,9 @@ import (
 	"crypto/sha1"
 	"crypto/sha256"
 	"crypto/x509"
-	"golang.org/x/crypto/chacha20poly1305"
 	"hash"
+
+	"golang.org/x/crypto/chacha20poly1305"
 )
 
 // a keyAgreement implements the client and server side of a TLS key agreement
@@ -469,4 +470,12 @@ const (
 	// TLS_FALLBACK_SCSV isn't a standard cipher suite but an indicator
 	// that the client is doing version fallback. See RFC 7507.
 	TLS_FALLBACK_SCSV uint16 = 0x5600
+
+	//Implemented by this package
+	TLS_DHE_RSA_WITH_AES_128_CBC_SHA = 0x0033
+	TLS_KRB5_EXPORT_WITH_RC4_40_MD5 = 0x002B
+	TLS_DHE_RSA_WITH_AES_256_CBC_SHA = 0x0039
+	TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384 = 0xc024
+	TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 = 0xc028
+	TLS_RSA_WITH_AES_256_CBC_SHA256 = 0x003d
 )
