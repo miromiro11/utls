@@ -1,7 +1,7 @@
 # ![uTLS](logo_small.png) uTLS
 
 [![Build Status](https://travis-ci.org/refraction-networking/utls.svg?branch=master)](https://travis-ci.org/refraction-networking/utls)
-[![godoc](https://img.shields.io/badge/godoc-reference-blue.svg)](https://godoc.org/github.com/saucesteals/utls#UConn)
+[![godoc](https://img.shields.io/badge/godoc-reference-blue.svg)](https://godoc.org/github.com/miromiro11/utls#UConn)
 
 ---
 
@@ -10,7 +10,7 @@ Golang 1.11+ is required.
 If you have any questions, bug reports or contributions, you are welcome to publish those on GitHub. If you want to do so in private, you can contact one of developers personally via sergey.frolov@colorado.edu
 
 Documentation below may not keep up with all the changes and new features at all times,
-so you are encouraged to use [godoc](https://godoc.org/github.com/saucesteals/utls#UConn).
+so you are encouraged to use [godoc](https://godoc.org/github.com/miromiro11/utls#UConn).
 
 # Features
 
@@ -184,7 +184,7 @@ func (uconn *UConn) SetSessionCache(cache ClientSessionCache)
 
 # Client Hello IDs
 
-See full list of `clientHelloID` values [here](https://godoc.org/github.com/saucesteals/utls#ClientHelloID).  
+See full list of `clientHelloID` values [here](https://godoc.org/github.com/miromiro11/utls#ClientHelloID).  
 There are different behaviors you can get, depending on your `clientHelloID`:
 
 1. `utls.HelloRandomized` adds/reorders extensions, ciphersuites, etc. randomly.  
@@ -229,7 +229,7 @@ Here's how default "crypto/tls" is typically used:
 
 To start using using uTLS:
 
-1. Import this library (e.g. `import tls "github.com/saucesteals/utls"`)
+1. Import this library (e.g. `import tls "github.com/miromiro11/utls"`)
 2. Pick the [Client Hello ID](#client-hello-ids)
 3. Simply substitute `tlsConn := tls.Client(dialConn, &config)`
    with `tlsConn := tls.UClient(dialConn, &config, tls.clientHelloID)`

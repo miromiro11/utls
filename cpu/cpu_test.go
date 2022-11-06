@@ -5,9 +5,10 @@
 package cpu_test
 
 import (
-	"github.com/saucesteals/utls/cpu"
 	"runtime"
 	"testing"
+
+	"github.com/miromiro11/utls/cpu"
 )
 
 func TestAMD64minimalFeatures(t *testing.T) {
